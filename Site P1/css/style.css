@@ -1,0 +1,315 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: small;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 175px 750px;
+  grid-template-rows: 2fr 5fr 1fr;
+  justify-content: center;
+  grid-gap: 25px;
+}
+
+.welcome, .most-popular ul, .whats-new, .newsticker, .calendar {
+  background: #ddd
+}
+
+.border {
+  box-shadow: 0 0 1px 2px #333;
+}
+
+.logo {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar * {
+  padding: 0px;
+}
+
+.welcome {
+  margin: 0px;
+  position: relative;
+}
+
+.welcome img {
+  width: 50%;
+}
+
+.welcome > figcaption {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  height: 100%;
+}
+
+.side-nav {
+  margin-top: 12px;
+}
+
+.side-nav ul, .header ul, .content ul, .bottom-nav ul {
+  list-style: none;
+}
+
+.side-nav li {
+  margin-bottom: 12px;
+  padding: 5px;
+  color: #333;
+}
+
+.side-nav a, .most-popular a , .main-nav a{
+  text-decoration: none;
+}
+
+.most-popular li{
+  margin-left: 25px;
+  padding: 1px;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.top-nav ul, .main-nav ul, .bottom-nav ul, .search-area {
+  display: flex;
+}
+
+.header li, .footer li{
+  margin-left: 12px;
+}
+
+.top-nav li, .bottom-nav li {
+  border-left: 1px solid #333;
+  padding-left: 12px;
+}
+
+.top-nav li:first-child, .bottom-nav li:first-child {
+  border-left: none;
+}
+
+.A1 {
+  font-size: xx-small;
+  text-decoration: none;
+  color: #333;
+  padding: 0 3px;
+}
+
+.A2 {
+  font-size: x-small;
+  text-decoration: none;
+  color: #333;
+  padding: 0 3px;
+}
+
+.A3 {
+  font-size: small;
+  text-decoration: none;
+  color: #eee;
+  background-color: #333;
+  padding: 0 3px;
+}
+
+.search-area {
+  margin-top: 10px;
+}
+
+.search-area button {
+  margin-left: 0px;
+  padding: 5px;
+  background-color: #ccc;
+  border: none;
+  box-shadow: 1px 1px 1px 3px #333;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.search-area input {
+  margin-left: 30px;
+  margin-right: 0px;
+  padding-left: 10px;
+  border: none;
+}
+
+.advanced-search {
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
+.main-nav li {
+  padding: 5px 50px;
+  color: #333;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2.5fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 0px;
+}
+
+.content ul {
+  padding: 5px;
+  margin: 0px;
+}
+
+.content a {
+  color: #333;
+}
+
+.small-button {
+  border: 2px solid #333;
+  border-radius: 4px;
+  width: 1em;
+}
+
+.whats-new .small-button, .newsticker .small-button {
+  position: relative;
+  top: .5em;
+}
+
+.main-spotlight .small-button {
+  position: relative;
+  top: .2em;
+}
+
+.whats-new, .calendar {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 5px;
+  font-size: smaller;
+}
+
+.whats-new > h1, .calendar > h1 {
+  grid-column: 1/3;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.whats-new > figure {
+  margin: 0px;
+  width: 100px;
+}
+
+.whats-new p, .article-titles {
+  grid-column: 2/4;
+}
+
+.article-dates li, .more-news, .events {
+  text-align: right;
+}
+
+.events img {
+  position: relative;
+  top: .5em;
+}
+
+.newsticker {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  grid-gap: 5px;
+  font-size: smaller;
+}
+
+.newsticker-bar a{
+  display: block;
+}
+
+.newsticker-bar a:first-child{
+  margin-bottom: 20px;
+}
+
+.newsticker-bar a:nth-child(2){
+  margin-bottom: 5px;
+}
+
+.main-spotlight figure{
+  position: absolute;
+  z-index: -1;
+  margin: 0px;
+  height: 100%;
+}
+
+.main-spotlight {
+  position: relative;
+}
+
+.main-spotlight img {
+  height: 100%;
+}
+
+.main-spotlight-content {
+  background-color: rgba(200, 200, 200, .5);
+  margin-left: 30px;
+  margin-top: 120px;
+  padding: 5px;
+
+}
+.main-spotlight-content h1 {
+  margin-top: 2px;
+}
+
+.spotlight-rotation {
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.spotlight-rotation-icon {
+  text-decoration: none;
+  padding: 0 .5em;
+}
+
+.spotlight-rotation-icon:nth-child(1) {
+  border: 2px solid #333;
+  border-radius: 20px;
+}
+
+.sub-spotlight {
+  display: flex;
+}
+
+.sub-spotlight img {
+  width: 110px;
+  height: 110px;
+}
+
+.sub-spotlight h3 {
+  padding: 5px;
+}
+
+.footer {
+  grid-column: 1/3;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-top p {
+  margin: 0px;
+}
